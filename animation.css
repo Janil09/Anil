@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+.earth{
+   
+    
+   
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    animation: rotate 10s infinite;
+  animation-direction: normal;
+
+}
+#hello{
+    position: absolute;
+    animation: rotate 20s infinite;
+    animation-direction: normal;
+    animation-name: moon linear 2s infinite alternate;
+}
+
+
+
+@keyframes rotate{
+    0%{
+        
+        transform: rotate(0deg);
+    }
+   100%{
+        
+        transform: rotate(360deg);
+    }
+
+  
+    
+    
+}
+@keyframes moon {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+    
+
+
