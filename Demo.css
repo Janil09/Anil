@@ -1,0 +1,22 @@
+#hi{
+    position: absolute;
+    border: 2px solid black;
+    overflow: scroll;
+    background-color: lightgrey
+    
+}
+#helo{
+    display: inline-block;
+    position: absolute;
+    left: 210px;
+    font-size: x-large;
+    
+    
+    background-color:lightblue
+    
+    
+}
+button:hover{
+    background-color: lightgreen;
+}
+
