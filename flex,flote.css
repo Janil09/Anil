@@ -1,0 +1,77 @@
+.a{
+
+   border: 2px solid black;
+   height: 700px;
+   width:250px;
+   background-color: aqua;
+   
+   
+   
+}
+#hi{
+    display: flex;
+    
+    margin-left: 260px;
+    margin-top: -500px;
+
+    
+}
+h1{
+    position: absolute;
+    left: 270px;
+    top: 0px;
+
+}
+#hello{
+    display: flex;
+    
+    margin-left: 260px;
+   
+
+}
+#helo{
+    text-align: center;
+    
+}
+#hey{
+    margin-left: 250px;
+    display: flex;
+    gap: 100px;
+    
+    
+}
+#hii{
+    margin-left: 300px;
+
+}
+#as{
+    margin-left: 300px;
+    display: flex;
+  
+}
+#ab{
+    margin-left: 300px;
+
+}
+footer{
+    margin-left: 300px;
+    background-color: darkgray;
+   
+}
+#aa{
+    display: flex;
+    gap: 10px;
+   
+}
+img:hover{
+    opacity: 0.5;
+}
+b:hover{
+    background-color: gray;
+}
+input:hover{
+    background-color: gray;
+}
+input{
+    background-color: aliceblue;
+}
