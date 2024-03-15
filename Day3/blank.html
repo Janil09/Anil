@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    /* body{
+ color: whitesmoke;
+    } */
+    button{
+        color: red;
+      
+
+    }
+</style>
+<body>
+   <center>
+    <h1>
+        This page is loading....... <br>
+        Hi im JAnil
+        
+    </h1>
+    <script>
+     var ab=  document.createElement("button")
+     ab.innerText="Back"
+     
+     //ab.style.marginTop="300px"
+     
+     
+     ab.addEventListener("click",hello)
+     function hello(){
+        window.history.back()
+     }
+
+     var aa=localStorage.getItem("hey")
+     var b=document.createElement("img")
+     document.body.appendChild(b)
+     document.body.appendChild(ab)
+     b.setAttribute("src",aa)
+     b.style.width="150px"
+     //b.style.marginLeft="-130px"
+    </script>
+   </center>
+</body>
+</html>

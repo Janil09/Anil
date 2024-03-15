@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px ;
+            width: 0px;
+            height: 50px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+   
+    <script>
+
+
+        var a=document.createElement("div")
+        document.body.appendChild(a)
+       
+        // var b=document.createElement("div")
+        // document.body.appendChild(b)
+
+    var btn= document.createElement("button")
+    document.body.appendChild(btn)
+    btn.innerText="25%"
+    btn.style.marginTop="100px"
+    btn.style.height="30px"
+    btn.addEventListener("click",one)
+   
+
+    var btn= document.createElement("button")
+    document.body.appendChild(btn)
+    btn.innerText="50%"
+    btn.style.marginTop="100px"
+    btn.style.marginLeft="50px"
+    btn.style.height="30px"
+    btn.addEventListener("click",second)
+
+    var btn= document.createElement("button")
+    document.body.appendChild(btn)
+    btn.innerText="100%"
+    btn.style.marginTop="100px"
+    btn.style.marginLeft="50px"
+    btn.style.height="30px"
+    btn.addEventListener("click",third)
+
+
+
+
+  function one(){
+    a.style.width="25%"
+    a.style.backgroundColor="Lightgreen"
+   
+
+  }
+
+  
+
+  function second(){
+    a.style.width="50%"
+    a.style.backgroundColor="blue"
+   
+
+  }
+  
+
+  function third(){
+    a.style.width="100%"
+    a.style.backgroundColor="gray"
+   
+
+  }
+
+
+
+
+
+    </script>
+
+<!-- <button></button> -->
+</body>
+</html>

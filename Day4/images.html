@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover=one()>hii</button>
+
+    <script>
+        debugger;
+
+        var dv=document.createElement("div")
+        document.body.appendChild(dv)
+
+        var img1=document.createElement("img")
+        dv.appendChild(img1)
+        img1.setAttribute("src","https://www.cleartrip.com/collections/wp-content/uploads/2018/12/Kalpa.jpg")
+        img1.style.width="1300px"
+        img1.style.height="600px"
+
+
+        var img2=document.createElement("img")
+        document.body.appendChild(img2)
+        img2.setAttribute("src","https://images.herzindagi.info/image/2021/Jan/manali-facts-hadimba-temple.jpg")
+        img2.style.width="250px"
+        img2.addEventListener("click",one)
+
+        
+
+        var img3=document.createElement("img")
+        document.body.appendChild(img3)
+        img3.setAttribute("src","https://www.aanavandi.com/blog/wp-content/uploads/2019/08/ksrtc-munnar-Riyas-Paloli%E2%80%8E.jpg")
+        img3.style.width="250px"
+        img3.style.height="125px"
+        img3.addEventListener("click",two)
+
+        
+
+        var img4=document.createElement("img")
+        document.body.appendChild(img4)
+        img4.setAttribute("src","https://tripcapsule.in/wp-content/uploads/2023/06/Manali-Hill-Station.png")
+        img4.style.width="250px"
+        img4.style.height="125px"
+        img4.addEventListener("click",three)
+
+        
+
+        var img5=document.createElement("img")
+        document.body.appendChild(img5)
+        img5.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_m9ZFEJB-8RHnmuwZs7EWn3MAwx5JZkF7A&usqp=CAU")
+        img5.style.width="250px"
+        img5.style.height="125px"
+        img5.addEventListener("click",four)
+
+
+
+        function one(){
+            img1.setAttribute("src","https://images.herzindagi.info/image/2021/Jan/manali-facts-hadimba-temple.jpg")
+        }
+
+        function two(){
+            img1.setAttribute("src","https://www.aanavandi.com/blog/wp-content/uploads/2019/08/ksrtc-munnar-Riyas-Paloli%E2%80%8E.jpg")
+        }
+
+        function three(){
+            img1.setAttribute("src","https://tripcapsule.in/wp-content/uploads/2023/06/Manali-Hill-Station.png")
+        }
+        
+        function four(){
+            img1.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_m9ZFEJB-8RHnmuwZs7EWn3MAwx5JZkF7A&usqp=CAU")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New Promises</h1>
+    <script>
+        function fetchposts(){
+          return  new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const posts = ["post1","post2","post3"]
+                    if(posts.length>0){
+                        resolve(posts)
+                    }else{
+                        reject("something went wrong")
+                    }
+                },2000)
+
+            })
+        }
+        fetchposts().then((posts)=>console.log(posts)).catch((err)=>alert(err))
+        
+        function fetchlikes(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const likes =["like1","like2","like3"]
+                    if(likes.length>0){
+                        resolve(likes)
+                    }else{
+                        reject("Something went wrong ")
+                    }
+                },2000)
+            })
+        }
+        fetchlikes()
+        .then((likes)=>console.log(likes))
+        .catch((err)=>console.log(err))
+        
+        function fetchcomments(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const comments =["comments1","comments2","comments3"]
+                    if(comments.length>0){
+                        resolve(comments)
+                    }
+                    else{
+                        reject("something went wrong")
+                    }
+                },2000)
+            })
+        }
+        fetchcomments()
+        .then((comments)=>console.log(comments))
+        .catch((err)=>console.log(err))
+
+        function fetchcommentslikes(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const commentslikes=["commentslikes1","commentslikes2","commentlikes3"]
+                    if(commentslikes.length>0){
+                        resolve(commentslikes)
+                    }else{
+                        reject("something went wrong")
+                    }
+                },2000)
+            })
+
+        }
+        fetchcommentslikes()
+        .then((commentslikes)=>console.log(commentslikes))
+        .catch((err)=>console.log(err))
+
+        fetch("https://fakestoreapi.com/products")
+        .then((response)=>response.json())
+        .then((response)=>console.log(response))
+      
+    </script>
+</body>
+</html>
